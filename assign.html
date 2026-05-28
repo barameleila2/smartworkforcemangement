@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<htm lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>assign.com</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<!--navigation-->
+<nav class="navbar">
+    <div class="nav-container">
+        <h1 class="logo">Smart Workforce Management</h1>
+    
+            <ul class="nav-link">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="assign.html" class="active">Assign work</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+            </ul>
+    
+    </div>
+</nav>
+<!--assignment form section-->
+<section class="form-section">
+    <div class="form-container">
+        <h2>Assign Work to Employee</h2>
+        <form class="assignment-form">
+            <div class="form-group">
+                <label for="employee">Employee Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="taskname">Task Name</label>
+                <select id="taskname" name="task name" required>
+                    <option value="">Select the Task</option>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="security">Security</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="priority">Priority
+                <select id="priority" name="priority" required>
+                    <option value="">Select Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="Urgent">Urgent</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status" name="status" required>
+                    <option value="">Select Status</option>
+                    <option value="pending">Pending</option>
+                    <option value="in progress">In progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Assign Task</button>
+        </form>
+    </div>
+</section>
+<!--footer-->
+<footer class="footer">
+    <p>&copy; 2026 Workforce Management System. All rights are reserved.</p>
+</footer>
+    </body>
+</htm>

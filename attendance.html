@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>attendance.com</title>
+        <link rel="stylesheet" href="attendance.css">
+    </head>
+    <body>
+<!--navsection-->
+<nav class="navbar">
+    <div class="nav-container">
+        <h1 class="logo">Workforce Management</h1>
+        <ul class="nav-link">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="assign.html">Assign</a></li>
+            <li><a href="attendance.html" class="active">Attendance</a></li>
+        </ul>
+    </div>
+</nav>
+        <div class="container">
+            <h1>Employee Attendance</h1>
+            <div class="attendance-box">
+                <div class="top-section">
+                    <div class="search-box">
+                        <input type="text" placeholder="search employee...">
+                    </div>
+                    <button class="add-btn">+ Add Attendance</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Employee Name</th>
+                        <th>Date</th>
+                        <th>Check In</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Sarah Lee</td>
+                        <td>21 May 2026</td>
+                        <td>08:25 AM</td>
+                        <td class="late">Late</td>
+                        <td>
+                            <button class="action-btn edit">Edit</button>
+                            <button class="action-btn  delete">delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Michael Kim</td>
+                        <td>21 May 2026</td>
+                        <td>-</td>
+                        <td class="absent">Absent</td>
+                        <td>
+                            <button class="action-btn edit">Edit</button>
+                            <button class="action-btn delete">delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

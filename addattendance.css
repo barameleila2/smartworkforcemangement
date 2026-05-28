@@ -1,0 +1,13 @@
+.attendance-form{
+    display: flex;
+    gap:10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.attendance-form input,
+.attendance-form select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline:none;
+}
